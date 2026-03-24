@@ -1,0 +1,11 @@
+<section id="educacion" class="cv-section">
+  <h2 class="section-title">Educación</h2>
+
+  @for (item of education; track item.institution) {
+    <div class="education-item">
+      <h3>{{ item.institution }}</h3>
+      <p class="education-institution">{{ item.degree }}</p>
+      <p class="education-period">{{ item.period }}</p>
+    </div>
+  }
+</section>

@@ -1,0 +1,16 @@
+<section id="testimonios" class="cv-section">
+  <h2 class="section-title">Referencias</h2>
+
+  <div class="testimonials-grid">
+    @for (t of testimonials; track t.authorName) {
+      <article class="testimonial-card">
+        <blockquote>"{{ t.quote }}"</blockquote>
+        <div class="testimonial-author">
+          <p class="author-name">{{ t.authorName }}</p>
+          <p class="author-role">{{ t.authorRole }}</p>
+          <p class="author-company">{{ t.authorCompany }}</p>
+        </div>
+      </article>
+    }
+  </div>
+</section>

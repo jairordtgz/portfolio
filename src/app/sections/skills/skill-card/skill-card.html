@@ -1,0 +1,15 @@
+<div
+  class="skill-card-wrapper"
+  [class.flipped]="isFlipped"
+  (click)="toggle()"
+>
+  <div class="card-inner">
+    <div class="card-front">
+      <img [src]="skill.icon" [alt]="skill.name" />
+      <h3>{{ skill.name }}</h3>
+    </div>
+    <div class="card-back">
+      <p>{{ skill.description }}</p>
+    </div>
+  </div>
+</div>

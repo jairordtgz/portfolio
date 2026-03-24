@@ -1,0 +1,24 @@
+<section id="logros" class="cv-section">
+  <h2 class="section-title">Logros / Certificados</h2>
+
+  <div class="testimonials-grid">
+    @for (item of achievements; track item.title) {
+      <article class="testimonial-card">
+
+        @if (item.imageUrl) {
+          <div class="media-wrapper center-img">
+            <img [src]="item.imageUrl" [alt]="item.imageAlt" />
+          </div>
+        }
+
+        <div class="testimonial-author">
+          <h3 class="author-name">{{ item.title }}</h3>
+          <p class="author-role" style="text-align: justify;">
+            {{ item.description }}
+          </p>
+        </div>
+
+      </article>
+    }
+  </div>
+</section>

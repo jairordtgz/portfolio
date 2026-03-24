@@ -1,0 +1,9 @@
+<section id="habilidades" class="cv-section">
+  <h2 class="section-title">Habilidades Técnicas</h2>
+
+  <div class="padre">
+    @for (skill of skills; track skill.id) {
+      <app-skill-card [skill]="skill" />
+    }
+  </div>
+</section>

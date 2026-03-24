@@ -1,0 +1,13 @@
+<nav class="cv-nav">
+  <div class="container">
+    <ul>
+      @for (link of navLinks; track link.id) {
+        <li>
+          <a [href]="'#' + link.id" (click)="scrollTo(link.id, $event)">
+            {{ link.label }}
+          </a>
+        </li>
+      }
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,31 @@
+<section id="proyectos" class="cv-section">
+  <h2 class="section-title">Proyectos Destacados</h2>
+
+  <p-table
+    [value]="projects"
+    [paginator]="true"
+    [rows]="4"
+    responsiveLayout="scroll"
+    styleClass="p-datatable-sm p-datatable-striped"
+  >
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Proyecto</th>
+        <th>Tecnologías Usadas</th>
+        <th>Objetivo</th>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-project>
+      <tr>
+        <td class="project-name">
+          <a [href]="project.githubUrl" target="_blank" rel="noopener">
+            {{ project.name }}
+          </a>
+        </td>
+        <td class="project-tech">{{ project.technologies }}</td>
+        <td>{{ project.objective }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</section>
