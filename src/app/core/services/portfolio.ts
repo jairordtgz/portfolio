@@ -31,37 +31,49 @@ export class PortfolioService {
         name: 'Aplicación para control de finanzas personales',
         githubUrl: 'https://github.com/jairordtgz/proyecto-POO-Android-Studio.git',
         technologies: 'Android Studio, Java',
-        objective: 'Mantener el control de las finanzas en los usuarios para sus ingresos, gastos y cuentas bancarias.'
+        objective: 'Mantener el control de las finanzas en los usuarios para sus ingresos, gastos y cuentas bancarias.',
+        imageUrl: 'assets/images/projects/',
+        category: 'Movil',
       },
       {
         name: 'Mini Juegos basados en Estructuras de Datos',
         githubUrl: 'https://github.com/jairordtgz/data-structures-PAO-2-2024.git',
         technologies: 'Netbeans, VS Code, Java',
-        objective: 'Aplicar los conocimientos en Estructuras de Datos tales como pilas, backtracing y Dijkstra.'
+        objective: 'Aplicar los conocimientos en Estructuras de Datos tales como pilas, backtracing y Dijkstra.',
+        imageUrl: 'assets/images/projects/proyectoestd.png',
+        category: 'Escritorio',
       },
       {
         name: 'PredictNote',
         githubUrl: 'https://github.com/leno-mpm/Proyecto-Estad-stica.git',
         technologies: 'RStudio, Android Studio, R, Java',
-        objective: 'Predecir el promedio aplicando Estadística descriptiva e inferencial para las carreras de Mecatrónica y Computación.'
+        objective: 'Predecir el promedio aplicando Estadística descriptiva e inferencial para las carreras de Mecatrónica y Computación.',
+        imageUrl: 'assets/images/projects/',
+        category: 'Movil',
       },
       {
-        name: 'SQL to Graph (página web)',
+        name: 'SQL to Graph',
         githubUrl: 'https://github.com/jairordtgz/ProyectoAdmisionesKokoa.git',
         technologies: 'VS Code, Vite + React, JavaScript, MySQL',
-        objective: 'Visualizar en forma de grafos la lógica tras el resultado de una consulta SQL usando JSON y API MySQL Visual Explain.'
+        objective: 'Visualizar en forma de grafos la lógica tras el resultado de una consulta SQL usando JSON y API MySQL Visual Explain.',
+        imageUrl: 'assets/images/projects/',
+        category: 'Web',
       },
       {
         name: 'AirMap',
         githubUrl: 'https://github.com/AngelPila/terra-watch-live.git',
         technologies: 'VS Code, TypeScript, Python, PostgreSQL (Supabase)',
-        objective: 'Predecir y postear sobre la calidad de aire en cualquier parte del mundo.'
+        objective: 'Predecir y postear sobre la calidad de aire en cualquier parte del mundo.',
+        imageUrl: 'assets/images/projects/',
+        category: 'Web',
       },
       {
         name: 'VisuWallet: App para control de finanzas personales avanzado (PreTAWS)',
         githubUrl: 'https://github.com/mcpoveda2/VisuWallet.git',
         technologies: 'TypeScript, React Native, Tailwind CSS, Gemini 1.5 Flash, Ollama, Expo Go, Firebase',
-        objective: 'Mantener el control de las finanzas con autocompletado de formularios mediante OCR.'
+        objective: 'Mantener el control de las finanzas con autocompletado de formularios mediante OCR.',
+        imageUrl: 'assets/images/projects/',
+        category: 'Movil',
       },
     ];
   }

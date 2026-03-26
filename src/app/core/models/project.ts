@@ -3,4 +3,6 @@ export interface Project {
   githubUrl: string;
   technologies: string;
   objective: string;
+  imageUrl?: string;
+  category?: string
 }
