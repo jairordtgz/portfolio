@@ -56,7 +56,7 @@ export class PortfolioService {
         githubUrl: 'https://github.com/jairordtgz/ProyectoAdmisionesKokoa.git',
         technologies: 'VS Code, Vite + React, JavaScript, MySQL',
         objective: 'Visualizar en forma de grafos la lógica tras el resultado de una consulta SQL usando JSON y API MySQL Visual Explain.',
-        imageUrl: 'assets/images/projects/',
+        imageUrl: 'assets/images/projects/sql2graph.png',
         category: 'Web',
       },
       {
@@ -64,7 +64,7 @@ export class PortfolioService {
         githubUrl: 'https://github.com/AngelPila/terra-watch-live.git',
         technologies: 'VS Code, TypeScript, Python, PostgreSQL (Supabase)',
         objective: 'Predecir y postear sobre la calidad de aire en cualquier parte del mundo.',
-        imageUrl: 'assets/images/projects/',
+        imageUrl: 'assets/images/projects/airmap_nsac.png',
         category: 'Web',
       },
       {
