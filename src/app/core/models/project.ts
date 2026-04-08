@@ -4,5 +4,5 @@ export interface Project {
   technologies: string;
   objective: string;
   imageUrl?: string;
-  category?: string
+  category?: string;
 }

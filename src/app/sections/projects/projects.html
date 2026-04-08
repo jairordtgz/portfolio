@@ -20,7 +20,7 @@
       <article class="project-card">
 
         <!-- Imagen del proyecto -->
-        <div class="project-img-wrapper">
+        <div class="project-img-wrapper" [class.mobile]="project.category === 'Movil'">
           @if (project.imageUrl) {
             <img [src]="project.imageUrl" [alt]="project.name" class="project-img" />
           } @else {

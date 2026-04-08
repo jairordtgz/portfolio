@@ -48,7 +48,7 @@ export class PortfolioService {
         githubUrl: 'https://github.com/leno-mpm/Proyecto-Estad-stica.git',
         technologies: 'RStudio, Android Studio, R, Java',
         objective: 'Predecir el promedio aplicando Estadística descriptiva e inferencial para las carreras de Mecatrónica y Computación.',
-        imageUrl: 'assets/images/projects/',
+        imageUrl: 'assets/images/projects/predict_note.jpg',
         category: 'Movil',
       },
       {
