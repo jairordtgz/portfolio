@@ -72,7 +72,7 @@ export class PortfolioService {
         githubUrl: 'https://github.com/mcpoveda2/VisuWallet.git',
         technologies: 'TypeScript, React Native, Tailwind CSS, Gemini 1.5 Flash, Ollama, Expo Go, Firebase',
         objective: 'Mantener el control de las finanzas con autocompletado de formularios mediante OCR.',
-        imageUrl: 'assets/images/projects/',
+        imageUrl: 'assets/images/projects/visuwallet.jpg',
         category: 'Movil',
       },
     ];
