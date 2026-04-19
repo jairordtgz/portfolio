@@ -1,6 +1,11 @@
 <nav class="cv-nav">
-  <div class="container">
-    <ul>
+  <div class="nav-container">
+
+    <!-- Logo / nombre -->
+    <span class="nav-brand">JR</span>
+
+    <!-- Links — desktop -->
+    <ul class="nav-links">
       @for (link of navLinks; track link.id) {
         <li>
           <a [href]="'#' + link.id" (click)="scrollTo(link.id, $event)">
@@ -9,5 +14,22 @@
         </li>
       }
     </ul>
+
+    <!-- Botón hamburguesa — móvil -->
+    <button class="hamburger" (click)="toggleMenu()" [class.open]="menuOpen" aria-label="Menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <!-- Menú desplegable móvil -->
+  <div class="mobile-menu" [class.open]="menuOpen">
+    @for (link of navLinks; track link.id) {
+      <a [href]="'#' + link.id" (click)="scrollTo(link.id, $event)">
+        {{ link.label }}
+      </a>
+    }
   </div>
 </nav>
