@@ -54,7 +54,7 @@ export class PortfolioService {
       {
         name: 'SQL to Graph',
         githubUrl: 'https://github.com/jairordtgz/ProyectoAdmisionesKokoa.git',
-        technologies: 'VS Code, Vite + React, JavaScript, MySQL',
+        technologies: 'Vite + React, JavaScript, Tailwind CSS, MySQL',
         objective: 'Visualizar en forma de grafos la lógica tras el resultado de una consulta SQL usando JSON y API MySQL Visual Explain.',
         imageUrl: 'assets/images/projects/sql2graph.png',
         category: 'Web',
@@ -62,7 +62,7 @@ export class PortfolioService {
       {
         name: 'AirMap',
         githubUrl: 'https://github.com/AngelPila/terra-watch-live.git',
-        technologies: 'VS Code, TypeScript, Python, PostgreSQL (Supabase)',
+        technologies: 'TypeScript, Python, PostgreSQL (Supabase)',
         objective: 'Predecir y postear sobre la calidad de aire en cualquier parte del mundo.',
         imageUrl: 'assets/images/projects/airmap_nsac.png',
         category: 'Web',
@@ -74,6 +74,14 @@ export class PortfolioService {
         objective: 'Mantener el control de las finanzas con autocompletado de formularios mediante OCR.',
         imageUrl: 'assets/images/projects/visuwallet.jpg',
         category: 'Movil',
+      },
+      {
+        name: 'MapGrove',
+        githubUrl: 'https://github.com/PaulPer37/track2.git',
+        technologies: 'Django, Python, HTML, Google Earth Engine API',
+        objective: 'Predecir en base a dos variables (mm de agua de lluvia y nivel de marea INOCAR) qué zonas de la costa ecuatoriana quedarían inundadas, cantidad de población en riesgo y cuántas hectáreas de manglar actúan como barrera natural.',
+        imageUrl: 'assets/images/projects/mapgrove_spacehack2026.jpeg',
+        category: 'Web',
       },
     ];
   }
@@ -129,13 +137,13 @@ export class PortfolioService {
       },
       {
         title: 'Space Hack for Sustainability — Marzo 2025',
-        description: 'Participé en el hackaton estudiantil mundial donde se usaron datos satelitales para crear propuestas de valor. Analicé la relación entre sitios culturales y turismo en Toronto, Nueva York y París. Ganamos el segundo lugar en la sede ESPOL.',
+        description: 'Participé en el hackaton estudiantil (mundial) donde se uso datos satelitales para crear propuestas de valor que resuelvan desafíos globales en el campo de la sostenibilidad. Forme parte del equipo 30 y nos enfocamos en analizar la relación entre sitios culturales y turismo en ciudades como Toronto, Nueva York, París e identificamos áreas culturales y "desiertos culturales". Ganamos el segundo lugar en la sede ESPOL.',
         imageUrl: 'assets/images/achievements/spacehack.jpg',
         imageAlt: 'Space Hack 2025'
       },
       {
         title: 'NASA Space Apps Challenge — Octubre 2025',
-        description: 'Participé en el hackaton mundial con sede en ESPOL para predecir la calidad del aire. Junto a mi equipo GrupAP+ desarrollamos una web/red social para predecir y postear sobre la calidad del aire en tiempo real. ¡Ganamos el primer lugar!',
+        description: 'Participé en el hackaton mundial con sede en ESPOL para dar solución al track: From EarthData to Action: Cloud Computing with Earth Observation Data for Predicting Cleaner, Safer Skies. Junto a mi equipo (GrupAP+) desarrollamos una web/red social para predecir y postear sobre la calidad del aire en tiempo real. Ganamos el primer lugar!!',
         imageUrl: 'assets/images/achievements/nsac.jpg',
         imageAlt: 'Nasa Space Apps Challenge Guayaquil 2025'
       },
