@@ -19,7 +19,7 @@ export class NavbarComponent {
     { id: 'contacto',    label: 'Contacto' },
     { id: 'logros',      label: 'Logros' },
     { id: 'testimonios', label: 'Referencias' },
-    { id: 'sugerencias', label: 'Sugerencias' },
+    { id: 'form_contacto', label: 'Formulario de contacto' },
   ];
 
   toggleMenu(): void {

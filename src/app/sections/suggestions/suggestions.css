@@ -1,3 +1,29 @@
+.contact-subtitle {
+  color: #5a6c7d;
+  margin-bottom: 28px;
+  font-size: 0.95rem;
+}
+
+.alert {
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.alert-success {
+  background: #eafaf1;
+  color: #1e8449;
+  border: 1px solid #a9dfbf;
+}
+
+.alert-error {
+  background: #fdedec;
+  color: #c0392b;
+  border: 1px solid #f5b7b1;
+}
+
 .input-error {
   border-color: #e74c3c !important;
 }
@@ -7,4 +33,10 @@
   font-size: 0.85rem;
   margin-top: 5px;
   display: block;
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
 }

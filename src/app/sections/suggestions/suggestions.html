@@ -1,11 +1,25 @@
-<section id="sugerencias" class="cv-section">
-  <h2 class="section-title">Sugerencias para Mejorar el Currículum</h2>
+<section id="form_contacto" class="cv-section">
+  <h2 class="section-title">Formulario de contacto</h2>
+  <p class="contact-subtitle">¿Tienes alguna propuesta o quieres ponerte en contacto? Escríbeme.</p>
+
+  <!-- Mensaje de éxito -->
+  @if (sendSuccess) {
+    <div class="alert alert-success">
+      ✅ ¡Mensaje enviado! Te responderé pronto.
+    </div>
+  }
+
+  <!-- Mensaje de error -->
+  @if (sendError) {
+    <div class="alert alert-error">
+      ❌ Hubo un error al enviar. Intenta de nuevo o escríbeme directamente.
+    </div>
+  }
 
   <form class="cv-form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
 
-    <!-- Nombre -->
     <div class="form-group">
-      <label for="nombre">Nombre:</label>
+      <label for="nombre">Nombre</label>
       <input
         type="text"
         id="nombre"
@@ -14,70 +28,50 @@
         [class.input-error]="nombreInvalid"
       />
       @if (nombreInvalid) {
-        <small class="error-msg">El nombre es obligatorio (mínimo 3 caracteres).</small>
+        <small class="error-msg">El nombre es obligatorio.</small>
       }
     </div>
 
-    <!-- Área de mejora -->
     <div class="form-group">
-      <label for="areaMejora">Área de mejora:</label>
-      <select id="areaMejora" formControlName="areaMejora" [class.input-error]="areaInvalid">
-        <option value="" disabled>Seleccione un área</option>
-        <option value="contenido">Contenido</option>
-        <option value="diseño">Diseño</option>
-        <option value="estructura">Estructura</option>
-        <option value="usabilidad">Usabilidad</option>
-      </select>
-      @if (areaInvalid) {
-        <small class="error-msg">Selecciona un área de mejora.</small>
+      <label for="email">Correo electrónico</label>
+      <input
+        type="email"
+        id="email"
+        formControlName="email"
+        placeholder="tu@correo.com"
+        [class.input-error]="emailInvalid"
+      />
+      @if (emailInvalid) {
+        <small class="error-msg">Ingresa un correo válido.</small>
       }
     </div>
 
-    <!-- Tipo de sugerencia -->
-    <fieldset class="form-fieldset">
-      <legend>¿Qué tipo de sugerencia quieres dar?</legend>
-      <div class="radio-group">
-        <div class="radio-item">
-          <input type="radio" id="tipo1" formControlName="tipoSugerencia" value="general" />
-          <label for="tipo1">General</label>
-        </div>
-        <div class="radio-item">
-          <input type="radio" id="tipo2" formControlName="tipoSugerencia" value="tecnica" />
-          <label for="tipo2">Técnica</label>
-        </div>
-        <div class="radio-item">
-          <input type="radio" id="tipo3" formControlName="tipoSugerencia" value="visual" />
-          <label for="tipo3">Visual</label>
-        </div>
-      </div>
-      @if (tipoInvalid) {
-        <small class="error-msg">Selecciona un tipo de sugerencia.</small>
-      }
-    </fieldset>
-
-    <!-- Habilidades (selección múltiple) -->
     <div class="form-group">
-      <label for="habilidades">Habilidades que debería reforzar:</label>
-      <select id="habilidades" formControlName="habilidades" multiple size="5">
-        <option value="javascript">JavaScript</option>
-        <option value="css">CSS</option>
-        <option value="html">HTML</option>
-        <option value="react">React</option>
-        <option value="node">Node.js</option>
-      </select>
-    </div>
-
-    <!-- Comentarios -->
-    <div class="form-group">
-      <label for="comentarios">Comentarios adicionales:</label>
+      <label for="mensaje">Mensaje</label>
       <textarea
-        id="comentarios"
-        formControlName="comentarios"
+        id="mensaje"
+        formControlName="mensaje"
         rows="5"
-        placeholder="Escribe tus sugerencias aquí..."
+        placeholder="¿En qué puedo ayudarte?"
+        [class.input-error]="mensajeInvalid"
       ></textarea>
+      <input 
+        type="text" 
+        name="honeypot" 
+        [(ngModel)]="honeypot" 
+        [ngModelOptions]="{standalone: true}"
+        style="display:none" 
+        tabindex="-1" 
+        autocomplete="off"
+      />
+      @if (mensajeInvalid) {
+        <small class="error-msg">El mensaje debe tener al menos 10 caracteres.</small>
+      }
     </div>
 
-    <button type="submit" class="btn-submit">Enviar sugerencia</button>
+    <button type="submit" class="btn-submit" [disabled]="sending || isCoolingDown">
+      {{ isCoolingDown ? 'Espera ' + cooldownRemaining + 's...' : sending ? 'Enviando...' : 'Enviar mensaje' }}
+    </button>
+
   </form>
 </section>
