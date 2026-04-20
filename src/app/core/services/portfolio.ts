@@ -83,6 +83,14 @@ export class PortfolioService {
         imageUrl: 'assets/images/projects/mapgrove_spacehack2026.jpeg',
         category: 'Web',
       },
+      {
+        name: 'API-REST-MIGO',
+        githubUrl: 'https://github.com/devhangaroa/API-REST-MIGO.git',
+        technologies: 'Django, Python',
+        objective: 'Backend para sistema de brandeo de vehiculos, usado para el front de Administrador Web y App Movil MigoAds+',
+        imageUrl: 'assets/images/projects/api-rest-migo.png',
+        category: 'Web',
+      },
     ];
   }
 
