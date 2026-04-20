@@ -15,9 +15,7 @@ const content = `export const environment = {
 };
 `;
 
-fs.writeFileSync(
-  path.join(envDir, 'environment.prod.ts'),
-  content
-);
+fs.writeFileSync(path.join(envDir, 'environment.ts'), content);
+fs.writeFileSync(path.join(envDir, 'environment.prod.ts'), content);
 
 console.log('environment.prod.ts generado correctamente');
