@@ -28,14 +28,6 @@ export class PortfolioService {
   getProjects(): Project[] {
     return [
       {
-        name: 'Aplicación para control de finanzas personales',
-        githubUrl: 'https://github.com/jairordtgz/proyecto-POO-Android-Studio.git',
-        technologies: 'Android Studio, Java',
-        objective: 'Mantener el control de las finanzas en los usuarios para sus ingresos, gastos y cuentas bancarias.',
-        imageUrl: 'assets/images/projects/',
-        category: 'Movil',
-      },
-      {
         name: 'Mini Juegos basados en Estructuras de Datos',
         githubUrl: 'https://github.com/jairordtgz/data-structures-PAO-2-2024.git',
         technologies: 'Netbeans, VS Code, Java',
