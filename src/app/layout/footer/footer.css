@@ -1,6 +1,6 @@
 .cv-footer {
-  background: #2c3e50;
-  color: white;
+  background: #474973;
+  color: #f1dac4;
   padding: 30px 20px;
   margin-top: 50px;
 }
@@ -25,14 +25,14 @@
 }
 
 .footer-links a {
-  color: white;
+  color: #f1dac4;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: #3498db;
+  color: #e0cbb5;
 }
 
 @media (max-width: 768px) {

@@ -3,6 +3,17 @@
 @import 'primeicons/primeicons.css';
 
 /* ── Reset y base ── */
+
+:root {
+  --color-bg:         #f1dac4;
+  --color-primary:    #474973;
+  --color-primary-hover: #343660;
+  --color-text:       #1a1a2a;
+  --color-text-muted: #5a5a7a;
+  --color-card:       #fdf6ee;
+  --color-border:     #e0cbb5;
+  --color-accent-bg:  #ede0d0;
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +27,8 @@ html {
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
-  color: #2c3e50;
-  background-color: #f4f7f9;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 /* ── Container ── */
@@ -29,26 +40,26 @@ body {
 
 /* ── Secciones ── */
 .cv-section {
-  background: white;
+  background: var(--color-card);
   border-radius: 12px;
   padding: 35px;
   margin-bottom: 30px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-  border: 1px solid #e8ecef;
+  box-shadow: 0 2px 10px rgba(71, 73, 115, 0.08);
+  border: 1px solid var(--color-border);
   transition: box-shadow 0.3s ease;
 }
 
 .cv-section:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(71, 73, 115, 0.15);
 }
 
 .section-title {
-  color: #2c3e50;
+  color: var(--color-text);
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 25px;
   padding-bottom: 15px;
-  border-bottom: 3px solid #3498db;
+  border-bottom: 3px solid var(--color-primary);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -57,9 +68,9 @@ body {
 .education-item {
   margin-bottom: 25px;
   padding: 20px;
-  background: #f8fafb;
+  background: var(--color-accent-bg);
   border-radius: 8px;
-  border-left: 4px solid #3498db;
+  border-left: 4px solid var(--color-primary);
 }
 
 .education-item:last-child {
@@ -73,7 +84,7 @@ body {
 }
 
 .education-institution {
-  color: #3498db;
+  color: var(--color-primary);
   font-weight: 500;
   margin-bottom: 5px;
 }
@@ -96,7 +107,7 @@ body {
 }
 
 .projects-table thead {
-  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  background: linear-gradient(135deg, #474973 0%, #343660 100%);
   color: white;
 }
 
@@ -115,12 +126,12 @@ body {
 }
 
 .projects-table tbody tr:hover {
-  background-color: #f8fafb;
+  background-color: var(--color-accent-bg);
 }
 
 .project-name a {
   font-weight: 600;
-  color: #3498db;
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -131,6 +142,11 @@ body {
 .project-tech {
   color: #7f8c8d;
   font-size: 0.95rem;
+}
+
+.tech-chip {
+  background: #ede0d0;
+  color: #474973;
 }
 
 /* ── Multimedia (iframes) ── */
@@ -194,16 +210,16 @@ body {
 }
 
 .testimonial-card {
-  background: #f8fafb;
+  background: var(--color-accent-bg);
   padding: 25px;
   border-radius: 10px;
-  border-left: 4px solid #3498db;
+  border-left: 4px solid var(--color-primary);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .testimonial-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 20px rgba(71, 73, 115, 0.15);
 }
 
 .testimonial-card blockquote {
@@ -221,13 +237,13 @@ body {
 
 .author-name {
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--color-text);
   margin-bottom: 3px;
 }
 
 .author-role,
 .author-company {
-  color: #7f8c8d;
+  color: var(--color-text-muted);
   font-size: 0.9rem;
   margin-bottom: 2px;
 }
@@ -253,19 +269,21 @@ body {
 .form-group textarea {
   width: 100%;
   padding: 12px 15px;
-  border: 2px solid #e8ecef;
+  border: 2px solid var(--color-border);
   border-radius: 8px;
   font-size: 1rem;
   font-family: inherit;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background: var(--color-card);
+  color: var(--color-text);
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #3498db;
-  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(71, 73, 115, 0.15);
 }
 
 .form-fieldset {
@@ -306,7 +324,7 @@ body {
 }
 
 .btn-submit {
-  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  background: linear-gradient(135deg, #474973 0%, #343660 100%);
   color: white;
   border: none;
   padding: 14px 32px;
@@ -315,12 +333,12 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 4px 10px rgba(71, 73, 115, 0.3);
 }
 
 .btn-submit:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(52, 152, 219, 0.4);
+  box-shadow: 0 6px 16px rgba(71, 73, 115, 0.4);
 }
 
 /* ── Skill Cards (flip) ── */
@@ -363,6 +381,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #474973;
+  color: #f1dac4;
 }
 
 .card-front {
