@@ -179,6 +179,8 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(92, 61, 46, 0.12);
   border: 1px solid #e8ecef;
+  color: #fbfbfb;
+  background-color: #fbfbfb;
 }
 
 .media-wrapper img {
