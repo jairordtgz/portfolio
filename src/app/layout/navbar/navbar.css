@@ -1,10 +1,10 @@
 .cv-nav {
-  background: white;
+  background: var(--color-card);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 2px solid #e8ecef;
+  border-bottom: 2px solid var(--color-border);
 }
 
 .nav-container {
@@ -31,7 +31,7 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #5a6c7d;
+  color: var(--color-text-muted);
   font-weight: 500;
   font-size: 1rem;
   padding: 6px 12px;
@@ -41,8 +41,8 @@
 }
 
 .nav-links a:hover {
-  color: #3498db;
-  background-color: #ebf5fb;
+  color: var(--color-primary);
+  background-color: var(--color-accent-bg);
 }
 
 /* ── Hamburguesa ── */
@@ -51,7 +51,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  background: none;
+  color: var(--color-text);;
   border: none;
   cursor: pointer;
   padding: 6px;
@@ -67,7 +67,7 @@
   display: block;
   width: 24px;
   height: 2px;
-  background: #2c3e50;
+  background: var(--color-text);;
   border-radius: 2px;
   transition: all 0.3s ease;
   transform-origin: center;
@@ -88,7 +88,7 @@
 .mobile-menu {
   display: none;
   flex-direction: column;
-  background: white;
+  background: var(--color-card);
   border-top: 1px solid #e8ecef;
   max-height: 0;
   overflow: hidden;
@@ -101,17 +101,17 @@
 
 .mobile-menu a {
   text-decoration: none;
-  color: #5a6c7d;
+  color: var(--color-text-muted);
   font-weight: 500;
   font-size: 0.95rem;
   padding: 14px 20px;
-  border-bottom: 1px solid #f0f4f8;
+  border-bottom: 1px solid var(--color-border);
   transition: all 0.2s ease;
 }
 
 .mobile-menu a:hover {
-  color: #3498db;
-  background: #ebf5fb;
+  color: var(--color-primary);
+  background: var(--color-accent-bg);
   padding-left: 28px;
 }
 
