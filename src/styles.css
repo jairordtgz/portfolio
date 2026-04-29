@@ -5,14 +5,14 @@
 /* ── Reset y base ── */
 
 :root {
-  --color-bg:         #e8c39e;
-  --color-primary:    #474973;
-  --color-primary-hover: #343660;
-  --color-text:       #1a1a2a;
-  --color-text-muted: #5a5a7a;
-  --color-card:       #fdf6ee;
-  --color-border:     #e0cbb5;
-  --color-accent-bg:  #ede0d0;
+  --color-bg:            #e8c39e;
+  --color-primary:       #5c3d2e;
+  --color-primary-hover: #3e2723;
+  --color-text:          #1c1008;
+  --color-text-muted:    #6b4c3b;
+  --color-card:          #fbfbfb;
+  --color-border:        #d4a97a;
+  --color-accent-bg:     #faf1e7;
 }
 * {
   margin: 0;
@@ -44,13 +44,13 @@ body {
   border-radius: 12px;
   padding: 35px;
   margin-bottom: 30px;
-  box-shadow: 0 2px 10px rgba(71, 73, 115, 0.08);
+  box-shadow: 0 2px 10px rgba(92, 61, 46, 0.08);
   border: 1px solid var(--color-border);
   transition: box-shadow 0.3s ease;
 }
 
 .cv-section:hover {
-  box-shadow: 0 4px 20px rgba(71, 73, 115, 0.15);
+  box-shadow: 0 4px 20px rgba(92, 61, 46, 0.15);
 }
 
 .section-title {
@@ -79,7 +79,7 @@ body {
 
 .education-item h3 {
   font-size: 1.2rem;
-  color: #2c3e50;
+  color: #5c3d2e;
   margin-bottom: 8px;
 }
 
@@ -90,7 +90,7 @@ body {
 }
 
 .education-period {
-  color: #7f8c8d;
+  color: #281d18;
   font-size: 0.9rem;
 }
 
@@ -107,7 +107,7 @@ body {
 }
 
 .projects-table thead {
-  background: linear-gradient(135deg, #474973 0%, #343660 100%);
+  background: linear-gradient(135deg, #5c3d2e 0%, #3e2723 100%);
   color: white;
 }
 
@@ -177,7 +177,7 @@ body {
 .media-wrapper {
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(92, 61, 46, 0.12);
   border: 1px solid #e8ecef;
 }
 
@@ -219,19 +219,19 @@ body {
 
 .testimonial-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(71, 73, 115, 0.15);
+  box-shadow: 0 8px 20px rgba(92, 61, 46, 0.15);
 }
 
 .testimonial-card blockquote {
   font-style: italic;
-  color: #5a6c7d;
+  color:var(--color-text-muted);
   line-height: 1.7;
   margin-bottom: 20px;
   font-size: 0.95rem;
 }
 
 .testimonial-author {
-  border-top: 1px solid #e8ecef;
+  border-top: 1px solid var(--color-border);
   padding-top: 15px;
 }
 
@@ -324,7 +324,7 @@ body {
 }
 
 .btn-submit {
-  background: linear-gradient(135deg, #474973 0%, #343660 100%);
+  background: linear-gradient(135deg, #5c3d2e 0%, #3e2723 100%);
   color: white;
   border: none;
   padding: 14px 32px;
@@ -381,8 +381,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #474973;
-  color: #f1dac4;
+  background: #5c3d2e;
+  color: #f5e6d3;
 }
 
 .card-front {
@@ -405,8 +405,8 @@ body {
 }
 
 .card-back {
-  background: #95bcda;
-  color: #1a2a3a;
+  background: #5c3d2e;
+  color: #fbfbfb;
   transform: rotateY(180deg);
   padding: 15px;
   text-align: center;

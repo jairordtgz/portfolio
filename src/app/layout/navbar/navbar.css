@@ -51,7 +51,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  background: none;
+  color: var(--color-text);;
   border: none;
   cursor: pointer;
   padding: 6px;
@@ -67,7 +67,7 @@
   display: block;
   width: 24px;
   height: 2px;
-  background: #2c3e50;
+  background: var(--color-text);;
   border-radius: 2px;
   transition: all 0.3s ease;
   transform-origin: center;

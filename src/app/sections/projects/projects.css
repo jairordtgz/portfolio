@@ -24,9 +24,9 @@
 }
 
 .filter-btn.active {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: #f1dac4;
+  background: #5c3d2e;
+  border-color: #5c3d2e;
+  color: #f5e6d3;
 }
 
 /* ── Grid ── */
@@ -41,7 +41,7 @@
 .project-card {
   background: var(--color-card);
   border-radius: 14px;
-  border: 1px solid var(--color-border);
+  border: 2.5px solid var(--color-border);
   box-shadow: 0 2px 8px rgba(71, 73, 115, 0.08);
   overflow: hidden;
   display: flex;
@@ -61,6 +61,7 @@
   height: 170px;
   overflow: hidden;
   background: var(--color-accent-bg);
+  border-bottom: 1px solid var(--color-border);
 }
 
 /* Web/Desktop — landscape */
@@ -96,7 +97,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #474973 0%, #343660 100%);
+  background: linear-gradient(135deg, #5c3d2e 0%, #3e2723 100%);
   font-size: 3.5rem;
   font-weight: 700;
   color: rgba(255,255,255,0.4);
@@ -106,8 +107,8 @@
   position: absolute;
   top: 12px;
   right: 12px;
-  background: rgba(71, 73, 115, 0.85);
-  color: #f1dac4;
+  background: rgba(92, 61, 46, 0.85);
+  color: #fbfbfb;
   font-size: 0.75rem;
   font-weight: 600;
   padding: 4px 10px;
@@ -174,7 +175,7 @@
 }
 
 .github-btn:hover {
-  color: #3498db;
+  color: #5c3d2e;
 }
 
 /* ── Paginación ── */
@@ -207,9 +208,9 @@
 }
 
 .page-btn.active {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: #f1dac4;
+  background: #5c3d2e;
+  border-color: #5c3d2e;
+  color: #f5e6d3;
 }
 
 .page-btn:disabled {
