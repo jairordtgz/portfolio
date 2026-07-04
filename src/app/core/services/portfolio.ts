@@ -76,11 +76,19 @@ export class PortfolioService {
         category: 'Web',
       },
       {
-        name: 'API-REST-MIGO',
-        githubUrl: 'https://github.com/devhangaroa/API-REST-MIGO.git',
-        technologies: 'Django, Python',
+        name: 'Drivink API REST',
+        githubUrl: 'https://github.com/jairordtgz/drivink-api-main.git',
+        technologies: 'Django, Python, Celery, Redis, PostgreSQL',
         objective: 'Backend para sistema de brandeo de vehiculos, usado para el front de Administrador Web y App Movil MigoAds+',
         imageUrl: 'assets/images/projects/api-rest-migo.png',
+        category: 'Web',
+      },
+      {
+        name: 'Mini-servicio REST',
+        githubUrl: 'https://github.com/jairordtgz/prueba-tecnica-desarrollador-backend.git',
+        technologies: 'Django, Python, PostgreSQL, Celery, Redis, Docker',
+        objective: 'CRUD de gestión de clientes, lineas de servicio, cobranza y control de morosidad (prueba técnica)',
+        imageUrl: 'assets/images/projects/mini-servicio-rest-crud-G5.png',
         category: 'Web',
       },
     ];
