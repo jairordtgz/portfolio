@@ -91,6 +91,14 @@ export class PortfolioService {
         imageUrl: 'assets/images/projects/mini-servicio-rest-crud-G5.png',
         category: 'Web',
       },
+      {
+        name: 'Agentic OS',
+        githubUrl: 'https://github.com/jairordtgz/agentic-os-SO-1P.git',
+        technologies: 'C, POSIX, X11, Pthreads, TCP sockets, procesos',
+        objective: 'Sistema distribuido desarrollado en C que utiliza procesos, hilos y comunicación mediante sockets para capturar texto desde múltiples ventanas X11, clasificar documentos con Bag of Words e inferir el tipo de usuario de forma concurrente.',
+        imageUrl: 'assets/images/projects/arquitectura-agentic-os.png',
+        category: 'Escritorio',
+      },
     ];
   }
 
